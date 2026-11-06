@@ -1,5 +1,7 @@
 # Halloween Projector — a live 8-bit scene that listens to the music
 
+**[▶ Open the live scene](https://obiwandima-web.github.io/creative-lab/halloween-projector/)** — press *Демо-бит* (demo beat) to start, **F** for fullscreen.
+
 ![Skeletons dance round the cauldron; on a music drop the reaper casts a spell](docs/hero.gif)
 
 A pixel-art graveyard made for a house party (31 October 2026), projected on a wall for the whole night.
@@ -36,7 +38,7 @@ From V1 to V15 in a few days, one round of notes at a time. Every version is sti
 
 ## Run it
 
-Open the live page and press **▶ Демо-бит** (demo beat), **🎤** (microphone) or drop some mp3s on it. Keys: **F** fullscreen, **Space** a scare, **C** the reaper's spell, **7 / 8 / 9** the teaser now, **H** sensors.
+Open the [live page](https://obiwandima-web.github.io/creative-lab/halloween-projector/) and press **▶ Демо-бит** (demo beat), **🎤** (microphone) or drop some mp3s on it. Keys: **F** fullscreen, **Space** a scare, **C** the reaper's spell, **7 / 8 / 9** the teaser now, **H** sensors.
 
 For a party with Spotify or Apple Music on a Mac:
 
