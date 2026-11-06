@@ -1,0 +1,5 @@
+.DS_Store
+node_modules/
+*.tmp
+# working renders stay out of the repo; README media live in each project's docs/
+previews/

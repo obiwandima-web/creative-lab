@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halloween Cauldron</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #020104; overflow: hidden; cursor: none; }
+  canvas { position: fixed; left: 0; top: 0; image-rendering: pixelated; image-rendering: crisp-edges; }
+  #menu { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(5, 2, 12, 0.82); cursor: default;
+    font: 15px/1.45 ui-monospace, Menlo, monospace; color: #e6dcff; }
+  #menu.hidden { display: none; }
+  .box { max-width: 520px; padding: 24px 28px; border: 2px solid #6c4c80; background: #120a20; }
+  h1 { margin: 0 0 10px; font-size: 22px; color: #8affb8; letter-spacing: 1px; }
+  button, select { font: inherit; background: #2a1840; color: #fff; border: 2px solid #8affb8; padding: 8px 12px; margin: 4px 0; cursor: pointer; }
+  button:hover { background: #3a2458; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 8px 0; }
+  .keys { margin-top: 12px; color: #a99cc8; font-size: 13px; }
+  .keys b { color: #fff; }
+  #drop.over { outline: 2px dashed #8affb8; }
+  #hud { position: fixed; left: 8px; bottom: 8px; font: 12px/1.35 ui-monospace, Menlo, monospace; color: #cfc4ff; background: rgba(0,0,0,.55); padding: 6px 8px; white-space: pre; display: none; }
+  #hud.on { display: block; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="menu">
+  <div class="box" id="drop">
+    <h1>HALLOWEEN CAULDRON</h1>
+    <div>Как сцена слышит музыку:</div>
+    <div class="row"><button id="mic">🎤 Микрофон / вход</button><select id="dev"><option value="">вход по умолчанию</option></select></div>
+    <div class="row"><button id="files">📁 Свои треки</button><span style="color:#a99cc8">или перетащи mp3 сюда</span><input id="fi" type="file" accept="audio/*" multiple hidden></div>
+    <div class="row"><button id="demo">▶ Демо-бит без звука</button></div>
+    <div class="keys" id="status"></div>
+    <div class="keys">
+      <b>F</b> полный экран · <b>Space</b> испуг · <b>1</b> смех <b>2</b> БУ <b>3</b> крик <b>4</b> кошка<br>
+      <b>S</b> сальто · <b>C</b> заклинание жнеца · <b>E</b> глаза в дупле · <b>G</b> тень над кладбищем · <b>Z</b> рука зомби · <b>7</b> <b>8</b> <b>9</b> тизер с надписью 1 / 2 / 3 (раз в 20 мин сам) · <b>B</b> следующий рык BOO · <b>K</b> следующий звук кошки · <b>N</b> следующий трек (свои треки) · <b>D</b> приглушать музыку при испуге (по умолчанию выкл) · <b>H</b> датчики · <b>M</b> это меню
+    </div>
+  </div>
+</div>
+<div id="hud"></div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
